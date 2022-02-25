@@ -11,4 +11,11 @@ public class Maximum<E extends Comparable> {
         toPrint(max,values);
         return max;
     }
+
+    private static <E> void toPrint(E max, E... values) {
+        for(E element : values){
+            System.out.print("\t"+element);
+        }
+        System.out.print(" max is "+max);
+    }
 }
